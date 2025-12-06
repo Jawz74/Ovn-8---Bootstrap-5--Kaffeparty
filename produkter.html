@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaffehuset - Kaffeparty och kaffemaskiner</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="/css/custom.css" rel="stylesheet">
+</head>
+<body class="p-5">
+    <main>
+     <div class="container contentbgCustom">         
+        <header>
+            <img src="/images/header_img.png" class="img-fluid" />
+            <nav class="navbar navbar-expand-lg navbar-dark navbarCustom">               
+              <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" 
+                      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>                
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                  
+                  <ul class="navbar-nav">
+                   <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Hem</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="produkter.html">Produkter</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="om-oss.html">Om oss</a>
+                    </li>
+                  </ul>
+                </div>
+                <a class="navbar-brand" href="index.html">
+                  <img src="images/logo_cup.png" width="30" height="30" class="d-inline-block align-top">
+                  Kaffehuset Sverige</a>
+              </div>
+            </nav>
+          </header>
+
+            <div class="container mt-5">
+                <h2>Våra kaffemaskiner</h2>
+
+                <!-- Kolumnangivelser på radnivå, för flera intervall samtidigt: vid md (>=768px) 3st (3/12 per kolumn), 
+                under det (sm) 1st (1/12, stacked) g-4 betyder kolumnmellanrum på 4 både horisontellt o vertikalt-->
+                <div class="row row-cols-1 row-cols-md-3 g-4">  
+                    <div class="col">
+                        <div class="card cardCustom">
+                            <img src="/images/coffemachine_4.png" class="card-img-top">
+                            <div class="card-body">
+                            <h5 class="card-title">Model A1 - Coffe Chaos Maker 101</h5>
+                            <p class="card-text">En fantastisk maskin...Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                            </p>
+                            <p><strong>Pris: 2995 kr</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                      <div class="card cardCustom">
+                       <img src="/images/coffemachine_3.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Model A2 - Bean Crusher 666</h5>
+                            <p class="card-text">En fantastisk maskin...Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                            </p>
+                            <p><strong>Pris: 3995 kr</strong></p>
+                        </div>
+                        </div> 
+                    </div>   
+                    <div class="col">
+                      <div class="card cardCustom">
+                       <img src="/images/coffemachine_2.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Model A3 - Java Killer 1337</h5>
+                            <p class="card-text">En fantastisk maskin...Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+                            <p><strong>Pris: 1995 kr</strong></p>
+                        </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+        <!-- ○ Kaffeparty: Uppdelad i två delar, dvs två kolumner -->
+        <div class="container mt-5">
+            <h3>Kaffeparty</h3>
+            <div class="row">
+                <div class="col-md-6"> <!-- Nästlade grids här?-->
+                <h5>Företag</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pharetra viverra egestas. 
+                    Praesent rutrum a arcu condimentum scelerisque. 
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                    Maecenas sit amet massa volutpat, auctor enim in, ullamcorper quam. 
+                    Aliquam eu massa sed leo pretium egestas eu in sapien. Pellentesque diam lorem, pulvinar et eros vitae, tincidunt fringilla justo. 
+                    Nam quis turpis vel risus posuere pulvinar.</p>
+                </div>
+                <div class="col-md-6">
+                <h5>Privatpersoner</h5>
+                <p>Duis purus orci, vestibulum vitae erat vitae, ultricies fringilla quam. Nam lacinia accumsan turpis ut consequat. 
+                    Aenean maximus augue orci, non tincidunt velit dapibus vel. 
+                    Maecenas venenatis metus non odio pulvinar, ac vulputate massa tristique. Nullam eros urna, eleifend at viverra placerat, condimentum id justo. 
+                    Proin pulvinar imperdiet sapien, ac hendrerit lorem elementum id. Fusce tellus erat, placerat at porttitor et, aliquam vitae enim. 
+                    Sed nunc risus, cursus sit amet aliquet dictum, porta id libero.</p>
+                </div>
+            </div>
+            </div>
+
+    
+    <footer class="text-center py-3 mt-5 footerCustom">
+        © 2025 Kaffeparty AB — Webmaster: Jacob Wennerqvist
+    </footer>
+
+</div>
+</main>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" 
+integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous">
+</script>
+</body>
+</html>

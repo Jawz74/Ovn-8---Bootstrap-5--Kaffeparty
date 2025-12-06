@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaffehuset - Kaffeparty och kaffemaskiner</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link href="/css/custom.css" rel="stylesheet" />
+    <!-- Todo: byta ut cdn mot filer ? -->
+    <!-- Kolla Validator -->
+  </head>
+  <body class="p-5">
+    <main>
+      <!-- Container runt hela sidan. Fluid fyller hela sidan, men ger en viss marginal (margin: auto). -->
+      <div class="container contentbgCustom">
+        <header>
+          <!--  Fyller ut hela sin container, pga display:block -->
+          <img src="/images/header_img.png" class="img-fluid" />
+          <nav class="navbar navbar-expand-lg navbar-dark navbarCustom">  <!-- Navbar behövs för responsivt beteende -->
+            <!--  Ger en flexgrid som fyller hela sin containers bredd -->
+            <div class="container-fluid">
+                <!--Togglar dropdown-meny vid liten bredd-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" 
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+              <!-- Container runt menyelementen. Fluid fyller hela sin omgivande container (margin: auto). -->
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Hem</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="produkter.html">Produkter</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="om-oss.html">Om oss</a>
+                  </li>
+                </ul>
+              </div>
+              <a class="navbar-brand" href="index.html">
+                <img src="images/logo_cup.png" width="30" height="30" class="d-inline-block align-top">
+                Kaffehuset Sverige</a>
+            </div>
+          </nav>
+        </header>
+
+        <!--Div 1 - Vilka är vi? -->
+        <div class="container mt-5">
+          <!--.container används för webbsidans huvudinnehåll (960px bred, för viewportbredd på minst 992 px - kollas med media queries) .mt-5 är margin-top-->
+          <div class="row">
+            <div class="col-md-6">
+              <!-- kolumner tar upp 6/12 av raden då sidans bredd >= 768px (medium), därunder stacked-->
+              <h2>Vilka är vi?</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                pharetra viverra egestas. Praesent rutrum a arcu condimentum
+                scelerisque. Pellentesque habitant morbi tristique senectus et
+                netus et malesuada fames ac turpis egestas. Maecenas sit amet
+                massa volutpat, auctor enim in, ullamcorper quam. Aliquam eu
+                massa sed leo pretium egestas eu in sapien. Pellentesque diam
+                lorem, pulvinar et eros vitae, tincidunt fringilla justo. Nam
+                quis turpis vel risus posuere pulvinar.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <img src="/images/beans_cup.png" class="img-fluid rounded mt-md-5" /> <!-- img-fluid gör att bilden skalas om vid ändrad sidbredd-->              
+            </div>
+          </div>
+        </div>
+
+        <!--Div 2 - Vad gör vi? -->
+        <div class="container mt-5">
+          <!--.container används för webbsidans huvudinnehåll (960px bred, för viewportbredd på minst 992 px - kollas med media queries) .mt-5 är margin-top-->
+          <div class="row">
+            <div class="col-md-6">
+              <!-- kolumner tar upp 6/12 av raden då sidans bredd >= 768px (medium), därefter stacked-->
+              <h2>Vad gör vi?</h2>
+              <p>
+                Duis purus orci, vestibulum vitae erat vitae, ultricies
+                fringilla quam. Nam lacinia accumsan turpis ut consequat. Aenean
+                maximus augue orci, non tincidunt velit dapibus vel. Maecenas
+                venenatis metus non odio pulvinar, ac vulputate massa tristique.
+                Nullam eros urna, eleifend at viverra placerat, condimentum id
+                justo. Proin pulvinar imperdiet sapien, ac hendrerit lorem
+                elementum id. Fusce tellus erat, placerat at porttitor et,
+                aliquam vitae enim. Sed nunc risus, cursus sit amet aliquet
+                dictum, porta id libero.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <img src="/images/machines_cafe.png" class="img-fluid rounded mt-md-5" />
+              <!--Todo: Fixerad bredd på bilden typ width:500px gör att den går utanför kolumnen-->
+            </div>
+          </div>
+        </div>
+
+        <!--Div 3 - Varför oss? -->
+        <div class="container mt-5">
+          <!--.container används för webbsidans huvudinnehåll (960px bred, för viewportbredd på minst 992 px - kollas med media queries) .mt-5 är margin-top-->
+          <div class="row">
+            <div class="col-md-6">
+              <!-- kolumner tar upp 6/12 av raden då sidans bredd >= 768px (medium), därefter stacked-->
+              <h2>Varför oss?</h2>
+              <p>
+                Pellentesque est nulla, consectetur et placerat in, placerat
+                elementum erat. Fusce imperdiet magna dolor, ac euismod neque
+                fringilla feugiat. Aenean et risus sed est luctus luctus. Duis
+                sagittis, turpis a scelerisque pretium, tellus metus efficitur
+                dolor, in hendrerit tortor libero in diam. Pellentesque vitae mi
+                eget sapien facilisis fermentum. Sed in elit viverra, ultricies
+                neque ut, gravida nisl. Fusce in eleifend odio. Cras ultricies
+                neque a venenatis dictum. Nullam ullamcorper fermentum lorem at
+                semper. Cras malesuada porttitor sapien, iaculis lacinia tortor.
+                Praesent egestas pretium quam id blandit. Nulla luctus ipsum
+                mollis, faucibus ipsum vel, euismod odio. Vivamus et magna
+                euismod, tempor diam sit amet, ultrices enim. Nulla aliquam,
+                odio non pulvinar feugiat, odio tellus euismod magna, ut mollis
+                odio nunc ut sem.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <img src="/images/grind.png" class="img-fluid rounded mt-md-5" />
+              <!--Todo: Fixerad bredd på bilden typ width:500px gör att den går utanför kolumnen-->
+            </div>
+          </div>
+        </div>
+
+        <!--Div 4 - Kaffeparty - så funkar det -->
+        <div class="container mt-5">
+          <!--.container används för webbsidans huvudinnehåll (960px bred, för viewportbredd på minst 992 px - kollas med media queries) .mt-5 är margin-top-->
+          <div class="row">
+            <div class="col-md-6">
+              <!-- kolumner tar upp 6/12 av raden då sidans bredd >= 768px (medium), därefter stacked-->
+              <h2>Kaffeparty - Så funkar det!</h2>
+              <p>
+                Cras volutpat fermentum diam sagittis volutpat. Nunc purus elit,
+                fringilla a semper sed, varius sed velit. Nullam consequat
+                vulputate metus, id placerat tortor euismod vel. Vestibulum quis
+                urna sit amet urna auctor fringilla. Sed eu varius nunc.
+                Maecenas nec nunc id nulla ornare posuere. Duis tincidunt
+                fringilla massa non ultricies. Nullam venenatis elit libero,
+                vitae mollis enim auctor nec. Aliquam commodo, nisi et aliquam
+                ullamcorper, lorem erat hendrerit lacus, vitae lobortis odio
+                tellus id turpis. Aliquam lacinia commodo augue, et ultrices
+                ante ornare ac.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <img src="/images/coffe_splash.png" class="img-fluid rounded mt-md-5" />
+            </div>
+          </div>
+        </div>
+
+        <footer class="text-center py-3 mt-5 footerCustom">
+          © 2025 Kaffeparty AB — Webmaster: Jacob Wennerqvist
+        </footer>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaffehuset - Kaffeparty och kaffemaskiner</title>
+    
+    <!-- Todo: byta ut cdn mot lokala filer ? -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link href="/css/custom.css" rel="stylesheet" />
-    <!-- Todo: byta ut cdn mot filer ? -->
-    <!-- Kolla Validator -->
+      crossorigin="anonymous">
+    <link href="/css/custom.css" rel="stylesheet">    
   </head>
   <body class="p-5">
     <main>
@@ -20,7 +19,7 @@
       <div class="container contentbgCustom">
         <header>
           <!--  Fyller ut hela sin container, pga display:block -->
-          <img src="/images/header_img.png" class="img-fluid" />
+          <img src="/images/header_img.png" class="img-fluid" alt="">
           <nav class="navbar navbar-expand-lg navbar-dark navbarCustom">  <!-- Navbar behövs för responsivt beteende -->
             <!--  Ger en flexgrid som fyller hela sin containers bredd -->
             <div class="container-fluid">
@@ -45,7 +44,7 @@
                 </ul>
               </div>
               <a class="navbar-brand" href="index.html">
-                <img src="images/logo_cup.png" width="30" height="30" class="d-inline-block align-top">
+                <img src="images/logo_cup.png" width="30" height="30" class="d-inline-block align-top" alt="">
                 Kaffehuset Sverige</a>
             </div>
           </nav>
@@ -70,7 +69,7 @@
               </p>
             </div>
             <div class="col-md-6">
-              <img src="/images/beans_cup.png" class="img-fluid rounded mt-md-5" /> <!-- img-fluid gör att bilden skalas om vid ändrad sidbredd-->              
+              <img src="/images/beans_cup.png" class="img-fluid rounded mt-md-5" alt=""> <!-- img-fluid gör att bilden skalas om vid ändrad sidbredd-->              
             </div>
           </div>
         </div>
@@ -95,7 +94,7 @@
               </p>
             </div>
             <div class="col-md-6">
-              <img src="/images/machines_cafe.png" class="img-fluid rounded mt-md-5" />
+              <img src="/images/machines_cafe.png" class="img-fluid rounded mt-md-5" alt="">
               <!--Todo: Fixerad bredd på bilden typ width:500px gör att den går utanför kolumnen-->
             </div>
           </div>
@@ -126,7 +125,7 @@
               </p>
             </div>
             <div class="col-md-6">
-              <img src="/images/grind.png" class="img-fluid rounded mt-md-5" />
+              <img src="/images/grind.png" class="img-fluid rounded mt-md-5" alt="">
               <!--Todo: Fixerad bredd på bilden typ width:500px gör att den går utanför kolumnen-->
             </div>
           </div>
@@ -153,7 +152,7 @@
               </p>
             </div>
             <div class="col-md-6">
-              <img src="/images/coffe_splash.png" class="img-fluid rounded mt-md-5" />
+              <img src="/images/coffe_splash.png" class="img-fluid rounded mt-md-5" alt="">
             </div>
           </div>
         </div>
@@ -163,10 +162,9 @@
         </footer>
       </div>
     </main>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
       integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
   </body>
 </html>
